@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Consult Form</title>
+
+	<link href="assets/css/root.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="modal" id="contactwModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" style="width:700px">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<font class="title">
+						企业体验咨询
+					</font>
+				</div>
+				<div class="modal-body" align="center">
+					<div class="panel-body">
+						<form id="contactForm" onsubmit="return false" class="form-horizontal" method="post"><br>
+							<div class="form-area">
+								<div class="form-group">
+									<label for="exampleInputAmount2" class="col-sm-3 control-label form-label">企业名称：</label>
+									<div class="col-sm-9">
+										<div class="input-group">
+											<div class="input-group-addon"><i class="fa fa-home"></i></div>
+											<input type='text' id='f_company_name' name = "f_company_name" class="form-control" placeholder="必填*" autofocus required>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputAmount2" class="col-sm-3 control-label form-label pull-left">联络人姓名：</label>
+									<div class="col-sm-9">
+										<div class="input-group">
+											<div class="input-group-addon"><i class="fa fa-user"></i></div>
+											<input type='text' id='f_fullname' name = "f_fullname" class="form-control" placeholder="必填*"  autofocus required>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+								  <label for="exampleInputAmount2" class="col-sm-3 control-label form-label">联络手机：</label>
+								  <div class="col-sm-9">
+									<div class="input-group">
+									  <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+									  <input type='tel' id='f_mobile' name = "f_mobile" class="form-control" placeholder="必填*" pattern = "1[3456789]\d{9}" required>
+									</div>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label for="exampleInputAmount2" class="col-sm-3 control-label form-label">邮件：</label>
+								  <div class="col-sm-9">
+									<div class="input-group">
+									  <div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
+									  <input type='email' id='f_email' name = "f_email" class="form-control" placeholder="必填*" required>
+									</div>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label for="exampleInputAmount2" class="col-sm-3 control-label form-label">QQ：</label>
+								  <div class="col-sm-9">
+									<div class="input-group">
+									  <div class="input-group-addon"><i class="fa fa-qq"></i></div>
+									  <input type='text' id='f_qq' name = "f_qq" class="form-control" placeholder="选填">
+									</div>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label for="exampleInputAmount2" class="col-sm-3 control-label form-label">微信：</label>
+								  <div class="col-sm-9">
+									<div class="input-group">
+									  <div class="input-group-addon"><i class="fa fa-wechat"></i></div>
+									  <input type='text' id='f_wechat' name = "f_wechat" class="form-control" placeholder="选填">
+									</div>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label for="exampleInputAmount2" class="col-sm-3 control-label form-label">需求：</label>
+								  <div class="col-sm-9">
+									<div class="input-group">
+									  <div class="input-group-addon"><i class="fa fa-pencil"></i></div>
+									  <textarea id='f_request' name = "f_request" class="form-control" placeholder="请留言咨询问题内容(按回车键可换行)" style = "height:120px;"></textarea>
+									</div>
+									<br>
+								  </div>
+								</div>
+								<div class="modal-footer">
+									<h4></h4>
+									<button type="button" class="btn btn-white" data-dismiss="modal">离开</button>
+									<button type="submit" class="btn btn-white" onclick="onSend()">提交</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</body> 
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins.js"></script>
+	<script type="text/javascript" src="layui/layui.all.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</html>

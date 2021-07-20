@@ -1,0 +1,21 @@
+input
+{
+	height: 50px;
+}
+
+button
+{
+	width: 293px;
+}
+
+body
+{
+	background: #F5F5F5;
+}
+
+.title
+{
+	font-family: '思源黑体 CN MEDIUM';
+	font-size: 28px;
+	color: #000;
+}
