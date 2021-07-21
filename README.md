@@ -1,4 +1,4 @@
-# 企業體驗預約頁面
+# 企業體驗諮詢 - 預約頁面
 
 ![demo](assets/img/demo.png)
 
